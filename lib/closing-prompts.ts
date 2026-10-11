@@ -1,0 +1,36 @@
+export const closingPrompts=[
+ {text:'Markets today?',question:'How is the market today?',category:'Markets'},
+ {text:'Leading sectors?',question:'Which sectors are leading the sample market?',category:'Markets'},
+ {text:'Portfolio impact?',question:'How does this affect my portfolio?',category:'Markets'},
+ {text:'Spending too much?',question:'Where am I spending more?',category:'Spending'},
+ {text:'Dining this month?',question:'How much did I spend on dining this month?',category:'Spending'},
+ {text:'Why did dining rise?',question:'Which dining transactions should I review?',category:'Spending'},
+ {text:'What to review?',question:'What should I review?',category:'Review'},
+ {text:'Subscriptions up?',question:'Which subscriptions increased?',category:'Review'},
+ {text:'My equity mix?',question:'How does my equity allocation compare with the target?',category:'Review'},
+ {text:'Home goal on track?',question:'How is my home goal progressing?',category:'Review'},
+ {text:'Savings progress?',question:'See the sample savings progress',category:'Savings'},
+ {text:'Investment value?',question:'See the sample investment value',category:'Investments'},
+ {text:'Monthly spending?',question:'Explore sample monthly spending',category:'Spending'},
+ {text:'Save a little more?',question:'Change a monthly contribution',category:'Planning'},
+ {text:'Goal finish date?',question:'Explore a goal forecast',category:'Planning'},
+] as const;
+
+/** Prepared demo responses, shown locally in the question scene. No live feeds or account access. */
+export const closingAnswers=[
+ {title:'Banking and IT lead the sample market.',rows:[['NIFTY 50','24,979.10 · +0.62%'],['SENSEX','81,721.08 · +0.58%'],['NIFTY BANK','51,320.45 · +0.91%']],next:'Compare the market move with your own holdings before drawing conclusions.'},
+ {title:'Banking leads this sector snapshot.',rows:[['Banking','+1.8%'],['IT','+1.4%'],['Auto','+0.9%'],['Energy','+0.7%']],next:'A sector index describes a group. Individual holdings may perform differently.'},
+ {title:'The sample portfolio is up 0.8%.',rows:[['Main contributors','Banking and IT'],['Combined exposure','40% of the sample portfolio']],next:'Check your sector exposure and each holding’s move to understand the contribution.'},
+ {title:'Dining is 42% above the recent average.',rows:[['Dining this month','₹12,480'],['Three-month average','₹8,790'],['Difference','₹3,690 more']],next:'Compare dining transactions with your budget. Decide which expenses you want to keep.'},
+ {title:'₹12,480 went toward dining.',rows:[['Restaurants','₹7,200'],['Food delivery','₹3,480'],['Cafés','₹1,800']],next:'Restaurants are the largest part of this sample total. Start there when reviewing the month.'},
+ {title:'Start with the dining breakdown.',rows:[['Restaurants','₹7,200'],['Food delivery','₹3,480'],['Cafés','₹1,800']],next:'These totals show where spending went. Transaction dates and amounts would be needed to explain why it increased.'},
+ {title:'Three areas deserve a closer look.',rows:[['Subscriptions','₹150 more per month'],['Equity allocation','75% against a 60% target'],['Home goal','18% below planned progress']],next:'Choose the area that matters most to your current priorities. These are sample flags, not recommendations to trade.'},
+ {title:'Three subscriptions increased.',rows:[['Streaming','₹699 → ₹799'],['Music','₹99 → ₹119'],['Cloud storage','₹130 → ₹160']],next:'Together that is ₹150 more each month. Review usage and renewal dates before deciding what to keep.'},
+ {title:'Equity is above the sample target.',rows:[['Current equity allocation','75%'],['Target allocation','60%'],['Difference','15 percentage points']],next:'Review whether the target still fits your goals and risk preferences. This comparison is not an instruction to trade.'},
+ {title:'The home goal is 18% behind plan.',rows:[['Saved so far','₹4,10,000'],['Planned by this point','₹5,00,000'],['Gap','₹90,000']],next:'Review the timeline and future contributions before changing the plan.'},
+ {title:'Your sample fund is 65% complete.',rows:[['Emergency fund saved','₹3,24,000'],['Target','₹5,00,000'],['Remaining','₹1,76,000']],next:'The displayed percentage is rounded from 64.8%. Check how the target relates to your essential monthly expenses.'},
+ {title:'₹8,71,230 in sample investments.',rows:[['Illustrative mix','60% equity · 30% funds · 10% other'],['Chart','A sample trend, not a return forecast']],next:'This overview example uses its own illustrative mix. Review holdings, costs and diversification alongside the total value.'},
+ {title:'₹48,320 spent in the sample month.',rows:[['Food & dining','₹12,480'],['Shopping','₹9,840'],['Transport','₹7,260'],['Bills & utilities','₹6,480'],['Other','₹12,260']],next:'Compare these categories with your priorities and the previous month before setting a new budget.'},
+ {title:'A larger contribution changes the forecast.',rows:[['₹10,000 per month','₹7,15,929 after five years'],['₹20,000 per month','₹14,31,858 after five years'],['Assumptions','7% annual return · monthly compounding']],next:'Both figures assume end-of-month contributions and exclude fees, tax and inflation. Returns are not guaranteed.'},
+ {title:'A goal date depends on your assumptions.',rows:[['Sample home target','₹30,00,000'],['Monthly contribution','₹10,000'],['At 7% assumed return','First full-year checkpoint: 15 years'],['At 0% return','25 years']],next:'These examples start from zero. Contributions and returns change the timeline; neither date is a promise.'},
+] as const;

@@ -1,0 +1,64 @@
+/* A full-screen scroll chapter: scroll owns the question timeline, not an entry timer. */
+.closing-chapter{height:220svh;position:relative;background:#eef0f8}
+.closing-chapter>.closing-sticky{position:sticky;top:0;height:100svh;min-height:0;overflow:hidden;justify-content:center}
+.closing-chapter.motion-static{height:auto;min-height:100svh}.closing-chapter.motion-static>.closing-sticky{position:relative;height:auto;min-height:100svh}
+.closing-sticky .closing-copy .eyebrow{justify-content:center}
+/* The finale follows the question scene directly, without a separate FAQ strip. */
+.blue-footer.reference-finale{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.blue-footer.reference-finale .footer-word{flex:1;display:flex;align-items:center;padding:0;min-height:0;line-height:1.02}
+.blue-footer.reference-finale .footer-bottom{flex-shrink:0}.blue-footer.reference-finale .footer-top{flex-shrink:0}
+/* Give the actual input and Send clear contrast in the shared phone. */
+.assistant-phone .assistant-composer{background:#e9eef7;padding:16px 13px 14px}
+.assistant-phone .assistant-composer>label{font-size:14px;font-weight:650;color:#202f46;margin-bottom:10px}
+.assistant-phone .ask-input{background:#fff;border:1.5px solid #aaa4c4;min-height:56px;gap:7px;padding:6px 6px 6px 10px;box-shadow:0 3px 10px #29264d0c}
+.assistant-phone .ask-input>svg{color:#5e517a;width:17px;height:17px}
+.assistant-phone .ask-input input,.assistant-phone .composer-prompt{font-size:13px;color:#283247}
+.assistant-phone .ask-input input{padding:10px 0}.assistant-phone .ask-input input::placeholder{color:#647087;opacity:0}
+.assistant-phone .ask-input:focus-within input::placeholder{opacity:1}
+.assistant-phone .composer-caret{width:2px;height:19px;background:#6240a2;border:0;animation:visible-caret 1s steps(1,end) infinite}
+.assistant-phone .ask-input button{min-width:73px;height:42px;padding:0 10px;gap:6px;font-size:12px;font-weight:700;color:#fff;background:#6541a3;border:1px solid #573589;box-shadow:0 2px 0 #3e2567;border-radius:8px}
+.assistant-phone .ask-input button:disabled{background:#7655aa;border-color:#674396;color:#fff;opacity:1;box-shadow:0 2px 0 #513178}
+.assistant-phone .ask-input button:hover:not(:disabled){background:#4e2c86}
+.assistant-phone .assistant-composer>p{font-size:10px;line-height:1.5;color:#4f5d74;margin-top:9px}
+.assistant-bottom{font-size:12px;color:#bac7c0;min-height:24px}
+.phone-ask{border-color:#b5a2d3;background:#f8f5ff;color:#453766;font-weight:600}
+.phone-ask>span{display:flex;align-items:center;gap:3px;flex:1}.phone-ask svg:last-child{background:#6b49a8;color:#fff;box-sizing:content-box;padding:3px}
+.preview-caret{display:inline-block;width:1px;height:10px;background:#6240a2;animation:visible-caret 1s steps(1,end) infinite}
+@keyframes visible-caret{0%,49%{opacity:1}50%,100%{opacity:0}}
+/* Keep the photographic wrist flush with the pinned viewport, preserving screen/thumb registration. */
+@media(min-width:900px){
+ .investment-section .investment-sticky{display:flex;flex-direction:column;padding-bottom:0}
+ .investment-section .investment-top{flex-shrink:0}
+ .investment-section .investment-layout{flex:1;min-height:0;height:auto}
+ .investment-section .held-phone{width:100%;height:100%;max-height:none;aspect-ratio:auto;margin:0;align-self:stretch;overflow:hidden}
+ .investment-section .held-art{position:absolute;bottom:0;left:50%;width:min(150%,calc((100svh - 84px) * .835));height:auto;transform:translateX(-50%)}
+}
+/* Planner geometry: a consistent baseline and readable ink on two quiet surfaces. */
+.planner-section.planner-clean{background:#e9edf6;min-height:100svh;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);column-gap:5%;row-gap:20px;padding:36px 6%;align-content:center}
+.planner-clean .planner-layout{display:contents}.planner-clean>.atmosphere{display:none}.planner-clean .planner-heading{grid-column:1 / -1;grid-row:1;align-self:end}.planner-clean .planner-heading .eyebrow{font-size:11px;color:#4d5b75;margin-bottom:12px}
+.planner-clean .planner-heading h2{color:#223047;font-size:clamp(36px,3.5vw,50px);line-height:1.08}.planner-clean .planner-heading em{color:#625080}
+.planner-clean .planner-controls{grid-column:1;grid-row:2;width:100%;max-width:none;background:#fff;border:1px solid #cbd2e0;border-radius:16px;padding:20px;color:#2b374b;box-shadow:none;backdrop-filter:none}
+.planner-clean .forecast-card{grid-column:2;grid-row:2;align-self:stretch;background:#fff;border:1px solid #cbd2e0;border-radius:16px;padding:24px;color:#253249;box-shadow:0 8px 24px #34416b0a}
+.planner-clean .goal-select{background:#eef0f6;gap:3px;padding:4px;border-radius:10px}.planner-clean .goal-select button{font-size:13px;color:#49556e;gap:7px;min-height:44px;padding:10px 5px}
+.planner-clean .goal-select button.active{background:#644494;color:#fff;box-shadow:none}
+.planner-clean .goal-target{font-size:14px;color:#34415a;margin:20px 0}.planner-clean .goal-target>span:last-child{background:#f5f6fb;border:1px solid #b7c2d5;padding:8px 10px}.planner-clean .goal-target input{font-size:16px;color:#24334d;width:112px}
+.planner-clean .slider-label{font-size:14px;color:#34415a;margin:20px 0 10px}.planner-clean .slider-label strong{font-size:22px;color:#49316d;font-weight:600}
+.planner-clean .planner-controls input[type=range]{height:18px;accent-color:#6d4a9e}.planner-clean .contribution-presets{gap:8px;margin-top:12px}.planner-clean .contribution-presets button{font-size:13px;min-height:38px;padding:8px 12px;background:#f6f7fa;color:#35465d;border-color:#c0c9d8}.planner-clean .contribution-presets button.active{background:#eee7f8;border-color:#9676c0;color:#533784}
+.planner-clean .range-ends{font-size:12px;color:#54627b}.planner-clean .return-label{font-size:13px;color:#34415a;margin-top:17px;padding-top:14px;border-color:#d7dce6}.planner-clean .return-label select{font-size:14px;color:#3c285c;background:#f6f3fa;border-color:#b7a8cf;min-height:38px}
+.planner-clean .planner-tip{font-size:12px;color:#52627a;margin-top:14px;max-width:none}
+.planner-clean .forecast-heading{font-size:11px;color:#45546e;letter-spacing:.7px}.planner-clean .forecast-heading>span:last-child{font-size:12px;background:#eef0f6;color:#43536b;padding:6px 9px}
+.planner-clean .forecast-total{margin-top:20px}.planner-clean .forecast-total>span{font-size:14px;color:#52627a}.planner-clean .forecast-total>strong{font-size:clamp(34px,3.4vw,48px);color:#24334a;margin-top:8px}
+.planner-clean .forecast-chart-header{font-size:12px;color:#43536b;margin-top:20px}.planner-clean .forecast-chart{height:170px}.planner-clean .forecast-breakdown{padding:15px 0;border-color:#d7dce6}.planner-clean .forecast-breakdown span{font-size:12px;color:#53617a}.planner-clean .forecast-breakdown strong{font-size:20px;color:#293a52}
+.planner-clean .forecast-status{padding:13px;background:#f1edf8;color:#513c73;border:1px solid #e0d5f0;margin-top:16px}.planner-clean .forecast-status.covered{background:#edf5ef;color:#365740;border-color:#cddfd1}.planner-clean .forecast-status strong{font-size:13px;color:inherit}.planner-clean .forecast-status span{font-size:12px;color:inherit}
+.planner-clean .forecast-details{font-size:12px;color:#49376a;border-color:#d7dce6;margin-top:15px}.planner-clean .forecast-details summary{min-height:32px}.planner-clean .forecast-details label,.planner-clean .forecast-details p{font-size:12px;color:#42516b}
+.planner-clean .forecast-disclaimer{font-size:11px;line-height:1.5;color:#53617a;margin-top:12px}
+@media(min-width:900px) and (max-height:720px){.planner-section.planner-clean{padding-top:24px;padding-bottom:24px;row-gap:16px}.planner-clean .planner-heading h2{font-size:38px}.planner-clean .planner-controls{padding:16px 18px}.planner-clean .slider-label{margin-top:15px}.planner-clean .goal-target{margin:16px 0}.planner-clean .forecast-card{padding:20px}.planner-clean .forecast-chart{height:145px}}
+@media(max-width:899px){.planner-section.planner-clean{grid-template-columns:1fr;row-gap:20px;padding:34px 6%;min-height:0}.planner-clean .planner-heading{grid-column:1;grid-row:1}.planner-clean .planner-controls{grid-column:1;grid-row:2}.planner-clean .forecast-card{grid-column:1;grid-row:3;align-self:start;padding:22px}.planner-clean .goal-select button{flex-direction:row;font-size:12px;gap:6px;padding:10px 4px;min-height:44px}.planner-clean .forecast-chart{height:170px}}
+@media(max-width:380px){.assistant-phone .ask-input{gap:5px;padding-left:8px}.assistant-phone .ask-input>svg{width:15px}.assistant-phone .composer-prompt,.assistant-phone .ask-input input{font-size:12px}.assistant-phone .ask-input button{min-width:65px;padding:0 8px}.planner-clean .goal-select button{font-size:11px}.planner-clean .planner-controls,.planner-clean .forecast-card{padding:18px 14px}.planner-clean .goal-target input{width:96px}}
+@media(prefers-reduced-motion:reduce){.closing-chapter{height:auto;min-height:100svh}.closing-chapter>.closing-sticky{position:relative;height:auto;min-height:100svh}.composer-caret,.preview-caret{animation:none}}
+.site-motion-static .composer-caret,.site-motion-static .preview-caret{animation:none}
+
+@media(max-height:480px){.closing-chapter>.closing-sticky{padding-top:12px;padding-bottom:12px;gap:8px}.closing-sticky .closing-copy .eyebrow,.closing-sticky .closing-copy p{display:none}.closing-sticky .closing-copy h2{font-size:24px}}
+
+@media(min-width:900px){.no-pin.investment-section .investment-sticky{height:min(720px,100svh)}.no-pin.investment-section .held-art{width:min(150%,531px,calc((100svh - 84px) * .835))}}
+.planner-clean .forecast-tooltip{font-size:12px;color:#3c2b58;background:#fff;border-color:#c6b9d9}.planner-clean .forecast-tooltip b{font-size:14px}
