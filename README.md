@@ -1,4 +1,4 @@
-# fermor-homepage   https://fermor-homepage-bsxs.vercel.app/
+# fermor-homepage                           https://fermor-homepage-bsxs.vercel.app/
 An interactive fintech homepage concept for Fermor, featuring scroll-driven storytelling, 3D device animations, financial insights, an AI assistant demo, an investment explorer and a dynamic goal planner. Built with Next.js, React, TypeScript, Three.js and CSS.
 # Fermor — Your money, in perspective
 
@@ -62,4 +62,4 @@ This is an interactive frontend demonstration. It does **not** connect to financ
 
 ## Deployment
 
-Import this public repository into Vercel with the **Next.js** preset and the repository root (`./`). The build script is `npm run build`. Open the production URL on desktop and mobile to review the final experience.
+Import this public repository into Vercel with the **Next.js** preset and the repository root (`./`). The build script is `npm run build`. Open the production URL on desktop and mobile to review the final experience.   https://fermor-homepage-bsxs.vercel.app/
